@@ -8,7 +8,7 @@
       </li>
       <button (click)='toggleDetails(i)'>Show Description</button>
 
-      <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-detail>
+      <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isDelete)='deleteQuote($event,i)' (numberOfUpvote)='upvoteButtonClick()'></app-quote-detail>
     </div>
   </ul>
 </div>
