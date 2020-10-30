@@ -3,7 +3,7 @@
   <hr>
   <ul>
     <div *ngFor='let quote of quotes; let i=index'>
-      <li>
+      <li appHighlight>
         {{quote.name}}
       </li>
       <button (click)='toggleDetails(i)'>Show Description</button>

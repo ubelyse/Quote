@@ -2,5 +2,13 @@
     <p>
         {{quote.author}}
     </p>
-    <button (click)= 'quoteDelete(true)'>Delete</button>
+    <p>
+        Upvotes:{{quote.Upvote}}
+      </p>
+      <p>
+        Downvotes:{{quote.Downvote}}
+      </p>
+      
+      <button (click)= 'quoteDelete(true)'>Delete</button>
+      <button (click)= 'Upvote()'>Upvote</button>
 </div>
