@@ -6,7 +6,7 @@
       <li appHighlight>
         {{quote.name}} due on {{quote.createdDate|date:'shortTime'}}
       </li>
-      <button (click)='toggleDetails(i)'>Show Description</button>
+      <button (click)='toggleDetails(i)'class="btn btn-primary">Show Description</button>
 
       <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-detail>
     </div>
