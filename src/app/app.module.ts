@@ -12,7 +12,7 @@ import { HighlightDirective } from './highlight.directive';
     AppComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    HighlightDirective
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@
   <ul>
     <div *ngFor='let quote of quotes; let i=index'>
       <li appHighlight>
-        {{quote.name}} due on {{quote.createdDate}}
+        {{quote.name}} due on {{quote.createdDate|date:'shortTime'}}
       </li>
       <button (click)='toggleDetails(i)'>Show Description</button>
 
