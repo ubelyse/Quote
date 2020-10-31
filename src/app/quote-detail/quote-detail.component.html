@@ -9,6 +9,9 @@
     <p>
       Downvote: {{numberOfDownvote}}
     </p>
+    <p>
+      This Quote has been created on {{quote.createdDate|timecount}} hours
+    </p>
 
     <button (click)= 'quoteDelete(true)'>Delete</button>
     <button (click)='upvoteButtonClick()'>Upvote</button>
