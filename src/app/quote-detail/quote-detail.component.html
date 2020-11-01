@@ -4,20 +4,20 @@
     </p>
 
     <p>
-      SUbmited By: {{quote.submitedby}}
+      Submited By: {{quote.submitedby}}
     </p>
 
     <p>
-     Upvote: {{numberOfUpvote}}
+      Upvote: {{quote.numberOfUpvotes}}
     </p>
     <p>
-      Downvote: {{numberOfDownvote}}
+      Downvote: {{quote.numberOfDownvotes}}
     </p>
     <p>
       This Quote has been created in {{quote.createdDate|timecount}} hours
     </p>
 
     <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete</button>
-    <button (click)='upvoteButtonClick()'>Upvote</button>
-    <button (click)='downvoteButtonClick()'>Downvote</button>
+    <button (click)='clickupvote()'>Upvote</button>
+    <button (click)='clickdownvote()'>Downvote</button>
 </div>

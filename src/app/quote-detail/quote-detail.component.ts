@@ -11,20 +11,17 @@ export class QuoteDetailComponent implements OnInit {
   @Input() quote:Quote;
   @Output() isDelete=new EventEmitter<boolean>();
 
-  numberOfUpvote: number=0;
-  numberOfDownvote: number=0;
-
   quoteDelete(Delete:boolean)
   {
     this.isDelete.emit(Delete);
   }
 
-  upvoteButtonClick(){
-    this.numberOfUpvote++;
+  clickupvote() {
+    this.quote.numberOfUpvotes ++;
   }
 
-  downvoteButtonClick(){
-    this.numberOfDownvote++;
+  clickdownvote() {
+    this.quote.numberOfDownvotes ++;
   }
 
   constructor() { 
