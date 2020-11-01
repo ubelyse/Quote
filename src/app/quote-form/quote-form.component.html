@@ -11,9 +11,9 @@
         </div>
         
         <div class="form-group">
-            <label for="description">Author</label>
-            <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.author" 
-            name="description" #authorname="ngModel" required></textarea>
+            <label for="authorname">Author</label>
+            <textarea class="form-control" id="authorname" rows="4" [(ngModel)]="newQuote.author" 
+            name="authorname" #authorname="ngModel" required></textarea>
             <div [hidden]="authorname.valid || authorname.pristine" class="alert alert-danger">
                 <p>Author is required</p>
             </div>
@@ -31,8 +31,8 @@
         <div class="form-group">
             <label for="complete">Completed Time</label>
             <input type='time' id="complete" [(ngModel)]="newQuote.createdDate" 
-            name="completeDate" #completeDate="ngModel" required>
-            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+            name="createdDate" #createdDate="ngModel" required>
+            <div [hidden]="createdDate.valid || createdDate.pristine" class="alert alert-danger">
                 <p>Time is required</p>
             </div>
         </div>
