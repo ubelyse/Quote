@@ -23,7 +23,7 @@ export class QuoteDetailComponent implements OnInit {
   clickdownvote() {
     this.quote.numberOfDownvotes ++;
   }
-
+  
   constructor() { 
 
   }
