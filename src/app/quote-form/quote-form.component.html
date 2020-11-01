@@ -30,7 +30,7 @@
 
         <div class="form-group">
             <label for="complete">Completed Time</label>
-            <input type='time' id="complete" [(ngModel)]="newQuote.createdDate" 
+            <input type='date' id="complete" [(ngModel)]="newQuote.createdDate" 
             name="createdDate" #createdDate="ngModel" required>
             <div [hidden]="createdDate.valid || createdDate.pristine" class="alert alert-danger">
                 <p>Time is required</p>

@@ -9,6 +9,7 @@ import { Quote } from '../quote';
 export class QuoteFormComponent implements OnInit {
 
   newQuote = new Quote(0,"","","",new Date());
+
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitQuote(){
@@ -16,7 +17,7 @@ export class QuoteFormComponent implements OnInit {
   }
 
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 
