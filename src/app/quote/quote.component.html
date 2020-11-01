@@ -1,5 +1,18 @@
-<div>
-  <h1>My Quotes</h1>
+<style>
+  .showdes{
+    background-color: red;
+    color: white;
+  }
+
+  .myquo{
+    background-color: green;
+    color: white;
+  }
+
+</style>
+
+<div class="myquo">
+  <h1 class="text-center">My Quotes</h1>
   <hr>
   <div class="row">
     <div class="col-md-6">
@@ -13,7 +26,7 @@
             {{quote.name}} due on {{quote.createdDate|date:'shortTime'}}
           </p>
     
-          <button (click)='toggleDetails(i)'class="btn btn-primary">Show Description</button>
+          <button (click)='toggleDetails(i)'class="btn showdes">Show Description</button>
           
           <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-detail>
         </div>
