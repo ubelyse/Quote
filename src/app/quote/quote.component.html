@@ -19,11 +19,11 @@
       <ul>
         <div *ngFor='let quote of quotes; let i=index'>
           <li appHighlight *ngIf="highestUpvote()===quote.numberOfUpvotes && quote.numberOfUpvotes>0"> 
-            {{quote.name}} due on {{quote.createdDate|date:'shortTime'}}
+            {{quote.name}} due on {{quote.createdDate|date:'medium'}}
           </li>
 
           <p *ngIf="highestUpvote()!==quote.numberOfUpvotes || quote.numberOfUpvotes===0"> 
-            {{quote.name}} due on {{quote.createdDate|date:'shortTime'}}
+            {{quote.name}} due on {{quote.createdDate|date:'medium'}}
           </p>
     
           <button (click)='toggleDetails(i)'class="btn showdes">Show Description</button>
