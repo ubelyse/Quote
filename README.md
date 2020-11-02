@@ -2,6 +2,7 @@
 Belyse Uwambayinema
 
 # Quote
+This project is a quote based app that allow users to read through the created quotes and be able to upvote and downvote among them and it also provides the user with the ability to insert new quotes in case they have ones.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
